@@ -2,6 +2,16 @@
   "identity": {
     "file_name": "identity.json"
   },
+  "dirty-newsplit-dpo-v0": {
+    "hf_hub_url": "LmPa/dirty-newsplit-dpo-v0",
+    "ranking":true,
+    "columns": {
+        "prompt": "instruction",
+        "query": "input",
+        "chosen": "chosen",
+        "rejected": "rejected"
+      }
+  },
   "alpaca_en_demo": {
     "file_name": "alpaca_en_demo.json"
   },
