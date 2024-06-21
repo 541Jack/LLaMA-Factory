@@ -16,6 +16,7 @@
     "hf_hub_url": "LmPa/dirty-newsplit-dpo-v3.1",
     "ranking":true,
     "columns": {
+        "prompt": "instruction",
         "query": "input",
         "chosen": "chosen",
         "rejected": "rejected"
