@@ -11,7 +11,6 @@ llamafactory-cli train \
     --cutoff_len 2048 \
     --learning_rate 1e-07 \
     --num_train_epochs 1.0 \
-    --max_samples 10000 \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 64 \
     --per_device_eval_batch_size 1 \
