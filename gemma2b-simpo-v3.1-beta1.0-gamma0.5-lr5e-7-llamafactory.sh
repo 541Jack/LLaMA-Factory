@@ -29,7 +29,7 @@ llamafactory-cli train \
     --output_dir saves/gemma2b-simpo-v3.1-beta1.0-gamma0.5-lr5e-7-llamafactory.sh \
     --bf16 True \
     --plot_loss True \
-    --pref_beta 2.0 \
+    --pref_beta 1.0 \
     --pref_ftx 0 \
     --pref_loss simpo \
     --simpo_gamma 0.5 \
