@@ -26,7 +26,7 @@ llamafactory-cli train \
     --output_dir saves/gemma2b-dpo-v3.1-beta1.0-lr1e-7-llamafactory \
     --bf16 True \
     --plot_loss True \
-    --ddp_timeout 180000000 \logg
+    --ddp_timeout 180000000 \
     --pref_beta 1.0 \
     --pref_ftx 0 \
     --pref_loss simpo \
