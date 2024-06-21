@@ -26,7 +26,7 @@ llamafactory-cli train \
     --optim adamw_torch \
     --packing False \
     --report_to none \
-    --output_dir saves/gemma2b-simpo-v3.1-beta1.0-gamma0.5-lr1e-7-llamafactory.sh \
+    --output_dir saves/gemma2b-simpo-v3.1-beta2.0-gamma0.5-lr1e-7-llamafactory.sh \
     --bf16 True \
     --plot_loss True \
     --pref_beta 2.0 \
@@ -35,7 +35,7 @@ llamafactory-cli train \
     --simpo_gamma 0.5 \
     --push_to_hub true \
     --hub_private_repo true \
-    --hub_model_id "LmPa/gemma2b-simpo-v3.1-beta1.0-gamma0.5-lr1e-7-llamafactory.sh" \
+    --hub_model_id "LmPa/gemma2b-simpo-v3.1-beta2.0-gamma0.5-lr1e-7-llamafactory.sh" \
     --hub_strategy all_checkpoints \
     --plot_loss \
     --val_size 0.01 \
