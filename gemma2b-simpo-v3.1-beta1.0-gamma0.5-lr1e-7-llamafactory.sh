@@ -4,7 +4,11 @@ llamafactory-cli train \
     --do_train True \
     --model_name_or_path google/gemma-2b \
     --preprocessing_num_workers 16 \
-    --finetuning_type full \
+    --finetuning_type lora \
+    --lora_rank 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0 \
+    --lora_target all \
     --flash_attn auto \
     --dataset_dir \data \
     --dataset dirty-newsplit-dpo-v3.1 \
@@ -25,7 +29,6 @@ llamafactory-cli train \
     --output_dir saves/gemma2b-simpo-v3.1-beta1.0-gamma0.5-lr1e-7-llamafactory.sh \
     --bf16 True \
     --plot_loss True \
-    --ddp_timeout 180000000 \
     --pref_beta 1.0 \
     --pref_ftx 0 \
     --pref_loss simpo \
