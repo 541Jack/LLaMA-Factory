@@ -1,3 +1,4 @@
+pip install -e ".[torch,metrics]"
 pip install --upgrade huggingface_hub
 pip install --upgrade wandb
 pip install --upgrade transformers_stream_generator
