@@ -12,9 +12,9 @@ llamafactory-cli train \
     --learning_rate 1e-07 \
     --num_train_epochs 1.0 \
     --max_samples 10000 \
-    --per_device_train_batch_size 2 \
-    --gradient_accumulation_steps 16 \
-    --per_device_eval_batch_size 2 \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 32 \
+    --per_device_eval_batch_size 1 \
     --lr_scheduler_type cosine \
     --max_grad_norm 1.0 \
     --logging_steps 10 \
