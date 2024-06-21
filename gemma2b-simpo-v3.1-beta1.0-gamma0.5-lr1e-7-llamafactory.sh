@@ -27,7 +27,6 @@ llamafactory-cli train \
     --bf16 True \
     --plot_loss True \
     --ddp_timeout 180000000 \logg
-    --include_num_input_tokens_seen True \
     --pref_beta 1.0 \
     --pref_ftx 0 \
     --pref_loss simpo \
