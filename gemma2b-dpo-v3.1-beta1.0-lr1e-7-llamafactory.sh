@@ -1,0 +1,46 @@
+llamafactory-cli train \
+    --stage dpo \
+    --template default\
+    --do_train True \
+    --model_name_or_path google/gemma-2b \
+    --preprocessing_num_workers 16 \
+    --finetuning_type lora \
+    --flash_attn auto \
+    --dataset_dir \data \
+    --dataset dirty-newsplit-dpo-v3.1 \
+    --cutoff_len 2048 \
+    --learning_rate 1e-07 \
+    --num_train_epochs 1.0 \
+    --max_samples 10000 \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 32 \
+    --per_device_eval_batch_size 1 \
+    --lr_scheduler_type cosine \
+    --max_grad_norm 1.0 \
+    --logging_steps 10 \
+    --save_steps 1000 \
+    --warmup_steps 50 \
+    --optim adamw_torch \
+    --packing False \
+    --report_to none \
+    --output_dir saves/gemma2b-dpo-v3.1-beta1.0-lr1e-7-llamafactory \
+    --bf16 True \
+    --plot_loss True \
+    --ddp_timeout 180000000 \
+    --include_num_input_tokens_seen True \
+    --lora_rank 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0 \
+    --lora_target all \
+    --pref_beta 1.0 \
+    --pref_ftx 0 \
+    --pref_loss sigmoid \
+    --push_to_hub true \
+    --hub_private_repo true \
+    --hub_model_id "LmPa/gemma2b-dpo-v3.1-beta1.0-lr1e-7-llamafactory" \
+    --hub_strategy all_checkpoints \
+    --plot_loss \
+    --do_eval true \
+    --eval_strategy steps\
+    --eval_steps 500 \
+    --report_to wandb
